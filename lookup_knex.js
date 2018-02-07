@@ -36,19 +36,3 @@ query(knex, process.argv[2]);
 
 
 
-
-// const input = process.argv[2];
-// function printResults (arr) {
-//   console.log('Found ', arr.length, ' person(s) by the name of', input);
-//   for (var key in arr) {
-//     console.log(arr[key].id, ': ', arr[key].first_name, arr[key].last_name, ', born ', arr[key].birthdate.toString().slice(0,15));
-//   }
-// }
-// knex('famous_people')
-//   .where('first_name', 'like', '%' + input + '%')
-//   .orWhere('last_name', 'like', '%' + input + '%')
-//   .select()
-//   .then(function(result) {
-//         printResults(result);
-//         process.exit();
-//     });
